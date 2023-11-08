@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 5 - Mario Vindas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form name="ifelse">
+        <label for="isNumber">Escriba algo y validaremos si es Numero o No<br></label>
+        <input id="isNumber" type="textfield" name="isNumber" value="234">
+        <input type="button" value="comprobar" onclick="esNumero(document.ifelse.isNumber.value)">
+    </form>
+
+    <form name="precioFruta">
+        <label for="fruta">Consulte el precio de la fruta <br></label>
+        <label for="fruta">Escriba manzanas, naranjas,papayas,mangos,cerezas o platanos </label>
+        <input id="texto" type="textfield" name="texto" value="">
+        <input type="button" value="comprobar" onclick="frutaCompr(document.precioFruta.texto.value)">
+    </form>
+
+
+    <form name="potenciaCalc">
+        <label id="poten" for="potenciaNumber">Eleva a la 2 el numero digitado</label>
+        <input id="potenciaNumber" type="textfield" name="potenciaNumber" value="">
+        <input type="button" value="comprobar"
+            onclick="ejmFunctionPotencia(document.potenciaCalc.potenciaNumber.value)">
+    </form>
+
+    <h3>Lo demás aparece en consola</h3>
+    <script src="./script.js"></script>
+</body>
+
+</html>
